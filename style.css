@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    height: 8rem;
+}
+
+.navMenu {
+    
+
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.navMenu a {
+    margin: 1rem;
+  
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  width: 80px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: white;
+}
+
+.navMenu a:hover {
+  color: #E3B8C6;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #E3B8C6;
+  border-radius: 50%;
+  opacity: 0;
+  -webkit-transform: translateX(30px);
+  transform: translateX(30px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  -webkit-transform: translateX(30px);
+  transform: translateX(70px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  -webkit-transform: translateX(110px);
+  transform: translateX(225px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  -webkit-transform: translateX(200px);
+  transform: translateX(370px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    .navMenu a {
+        font-size: 0.9rem;
+    }
+    .navMenu a:nth-child(1):hover ~ .dot {
+        -webkit-transform: translateX(30px);
+        transform: translateX(50px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+      }
+      
+      .navMenu a:nth-child(2):hover ~ .dot {
+        -webkit-transform: translateX(110px);
+        transform: translateX(180px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+      }
+      
+      .navMenu a:nth-child(3):hover ~ .dot {
+        -webkit-transform: translateX(200px);
+        transform: translateX(300px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+      }
+  }
+  @media only screen and (max-width: 375px) {
+    .navMenu a {
+        font-size: 0.8rem;
+        margin: 0.2rem;
+    }
+    .navMenu a:nth-child(1):hover ~ .dot {
+        -webkit-transform: translateX(30px);
+        transform: translateX(40px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+      }
+      
+      .navMenu a:nth-child(2):hover ~ .dot {
+        -webkit-transform: translateX(110px);
+        transform: translateX(130px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+      }
+      
+      .navMenu a:nth-child(3):hover ~ .dot {
+        -webkit-transform: translateX(200px);
+        transform: translateX(215px);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        opacity: 1;
+      }
+  }
